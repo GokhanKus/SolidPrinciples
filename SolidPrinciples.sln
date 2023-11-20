@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInversion", "..\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleResponsibility", "SingleResponsibility\SingleResponsibility.csproj", "{71DF2BFC-19DA-46BD-AC74-B3CAE11FBDA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LooseCoupling", "LooseCoupling\LooseCoupling.csproj", "{7773C870-0BC0-4E6C-ABD0-6BB159E48324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LooseCoupling", "LooseCoupling\LooseCoupling.csproj", "{7773C870-0BC0-4E6C-ABD0-6BB159E48324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosed", "OpenClosed\OpenClosed.csproj", "{2AD53E2A-E077-443A-9778-2368C4BE29BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7773C870-0BC0-4E6C-ABD0-6BB159E48324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7773C870-0BC0-4E6C-ABD0-6BB159E48324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7773C870-0BC0-4E6C-ABD0-6BB159E48324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD53E2A-E077-443A-9778-2368C4BE29BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD53E2A-E077-443A-9778-2368C4BE29BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD53E2A-E077-443A-9778-2368C4BE29BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD53E2A-E077-443A-9778-2368C4BE29BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
