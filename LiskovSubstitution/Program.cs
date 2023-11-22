@@ -43,7 +43,7 @@ namespace LiskovSubstitution
 	}
 }
 /*
-Liskov Substitution prensibi ortak bir referanstan türeyen (class interface vs.) nesnelerin hiçbir şeyi bozulmadan problem olmadan birbirleriyle degistirilmesi gerektigini 
+Liskov Substitution prensibi ortak bir referanstan türeyen (abstract class interface vs.) nesnelerin hiçbir şeyi bozulmadan problem olmadan birbirleriyle degistirilmesi gerektigini 
 yani birbirleri yerine gecebilmesi gerektigini oneren bir prensiptir. PolyMorphism(cok bicimlilik) gibi ama farkı var ve farkı şu;
 
 eger bir class any bir interface veya abstract class ile sozleşme yaparsa o zaman bu sozlesmeyi karsilamalı ve gerekli tum memberları icerisinde tanımlamalıdır.
