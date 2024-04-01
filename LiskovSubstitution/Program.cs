@@ -8,7 +8,7 @@ namespace LiskovSubstitution
 		static void Main(string[] args)
 		{
 			#region NotIdealCode
-			
+
 			//Cloud cloud = new Amazon();
 			//cloud.MachineLearning();
 			//cloud.Translate();
@@ -36,7 +36,21 @@ namespace LiskovSubstitution
 
 			cloud = new Google();
 			cloud.MachineLearning();
-			(cloud as ITranslatable)?.Translate();	//LSP ilkesi
+			(cloud as ITranslatable)?.Translate();  //LSP ilkesi
+
+			//nasıl ki bir classin bir interfaceye sahip oldugunda uyguluyorsa aynisini abstract class icinde yapabiiliriz.
+
+			ITranslatable cloud2 = new Amazon();
+			cloud2.Translate();
+			(cloud2 as ICloud)?.MachineLearning();
+
+			cloud2 = new Google();
+			cloud2.Translate();
+			(cloud2 as ICloud)?.MachineLearning();
+
+			cloud2 = new Yandex();
+			cloud2.Translate();
+			(cloud2 as ICloud)?.MachineLearning();
 
 			#endregion
 		}

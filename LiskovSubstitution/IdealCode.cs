@@ -8,7 +8,7 @@ namespace LiskovSubstitution_IdealCode
 {
 	abstract class ICloud
 	{
-	 public abstract void MachineLearning();
+		public abstract void MachineLearning();
 	}
 	interface ITranslatable
 	{
@@ -18,8 +18,8 @@ namespace LiskovSubstitution_IdealCode
 	{
 		public override void MachineLearning()
 		{
-            Console.WriteLine("Amazon Machine Learning");
-        }
+			Console.WriteLine("Amazon Machine Learning");
+		}
 		public void Translate()
 		{
 			Console.WriteLine("Amazon Translate");
@@ -36,11 +36,18 @@ namespace LiskovSubstitution_IdealCode
 	{
 		public override void MachineLearning()
 		{
-            Console.WriteLine("Google Machine Learning");
-        }
+			Console.WriteLine("Google Machine Learning");
+		}
 		public void Translate()
 		{
-            Console.WriteLine("Google Translate");
-        }
+			Console.WriteLine("Google Translate");
+		}
+	}
+	class Yandex : ITranslatable //ornegin yandex'te ICloud / machine learning ozelligi olmasın
+	{
+		public void Translate()
+		{
+			Console.WriteLine("Yandex Translate");
+		}
 	}
 }
